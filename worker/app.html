@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+  <head>  
+    <meta id="viewport" name="viewport" content="">
+    <link rel="shortcut icon" href="https://cloud.localpanda.com/static/icon/favicon.ico" type="image/x-icon">
+		{{ HEAD }}
+		<script>
+			//检测手机页面
+			var viewport = document.getElementById('viewport');
+			var winW = window.screen.width;
+			if(/\/mobile|inquiry|feedback/.test(window.location.href)){
+				viewport.setAttribute('content', "width=device-width, initial-scale=1.0, maximum-scale=1.0");
+			}else{
+				var ua = navigator.userAgent;
+				if(/(iPad|iPhone|Android)/.test(ua)){
+					viewport.setAttribute('content', "width=1200");
+
+				}
+			}
+		</script>
+  </head>
+  <body {{ BODY_ATTRS }} >
+    {{ APP }}
+    
+  </body>
+  
+</html>
