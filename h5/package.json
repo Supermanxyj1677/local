@@ -1,0 +1,35 @@
+{
+  "name": "localpanda-h5",
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "3001"
+    }
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^1.4.0"
+  },
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "flatpickr": "^4.4.4",
+    "less": "^3.0.1",
+    "less-loader": "^4.1.0",
+    "node-sass": "^4.9.0",
+    "prettier": "^1.12.1",
+    "sass-loader": "^7.0.1",
+    "vue-axios": "^2.1.1",
+    "vue-infinite-loading": "^2.3.1",
+    "vue-lazyload": "^1.2.2"
+  }
+}
